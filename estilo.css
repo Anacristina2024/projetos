@@ -1,0 +1,88 @@
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container da calculadora */
+.calculadora {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tela da calculadora */
+.tela {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Botões */
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d6d6d6;
+}
+
+/* Botões de operação */
+button.operador {
+    background-color: #ffa502;
+    color: white;
+}
+
+button.operador:hover {
+    background-color: #e08902;
+}
+
+/* Botão igual */
+button.igual {
+    background-color: #2ed573;
+    color: white;
+    grid-column: span 2;
+}
+
+button.igual:hover {
+    background-color: #28c76f;
+}
+
+/* Botão limpar */
+button:nth-child(14) {
+    background-color: #ff4757;
+    color: white;
+}
+
+button:nth-child(14):hover {
+    background-color: #e84141;
+}
